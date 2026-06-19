@@ -1,0 +1,20 @@
+{
+  "name": "autocontent-marketplace",
+  "interface": {
+    "displayName": "Autocontent Copilot"
+  },
+  "plugins": [
+    {
+      "name": "autocontent-copilot",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 [Русский](#русский) · [English](#english)
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.3.0-informational.svg)](build/manifest.shared.json)
+[![Version](https://img.shields.io/badge/version-1.3.0-informational.svg)](.claude-plugin/plugin.json)
 
 ---
 
@@ -35,11 +35,17 @@ codex plugin marketplace add Drtduck/content-factory
 codex plugin add autocontent-copilot@autocontent-marketplace
 ```
 
-Hermes:
+Hermes (через скилл-тап, плагин у нас без Python - только markdown-скиллы):
 
 ```
-hermes plugins install Drtduck/content-factory
+hermes skills tap add Drtduck/content-factory
+hermes skills install Drtduck/content-factory/skills/copilot
+hermes skills install Drtduck/content-factory/skills/onboarding
+hermes skills install Drtduck/content-factory/skills/visual
+hermes skills install Drtduck/content-factory/skills/video-editor
 ```
+
+Коннектор к серверу в Hermes настраивается отдельно: добавьте фрагмент из `mcp.config.yaml` в раздел `mcp_servers` вашего `config.yaml`.
 
 ### Подключение генерации
 
@@ -57,7 +63,7 @@ Claude: маркетплейс обновляется автоматически
 
 Codex: `codex plugin marketplace upgrade`.
 
-Hermes: `hermes plugins update`.
+Hermes: `hermes skills update` (подтянет новые версии установленных скиллов из тапа).
 
 ### Что открыто, что на сервере
 
@@ -101,11 +107,17 @@ codex plugin marketplace add Drtduck/content-factory
 codex plugin add autocontent-copilot@autocontent-marketplace
 ```
 
-Hermes:
+Hermes (via a skill tap, since our plugin ships no Python - markdown skills only):
 
 ```
-hermes plugins install Drtduck/content-factory
+hermes skills tap add Drtduck/content-factory
+hermes skills install Drtduck/content-factory/skills/copilot
+hermes skills install Drtduck/content-factory/skills/onboarding
+hermes skills install Drtduck/content-factory/skills/visual
+hermes skills install Drtduck/content-factory/skills/video-editor
 ```
+
+The connector to the server is configured separately in Hermes: add the fragment from `mcp.config.yaml` into the `mcp_servers` section of your `config.yaml`.
 
 ### Connecting generation
 
@@ -125,7 +137,7 @@ Claude: the marketplace updates automatically, or run `/plugin marketplace updat
 
 Codex: `codex plugin marketplace upgrade`.
 
-Hermes: `hermes plugins update`.
+Hermes: `hermes skills update` (pulls newer versions of installed skills from the tap).
 
 ### What is open, what is on the server
 
