@@ -24,21 +24,21 @@
 Claude:
 
 ```
-/plugin marketplace add Processorio/autocontent-method
+/plugin marketplace add Drtduck/content-factory
 /plugin install autocontent-copilot@autocontent-marketplace
 ```
 
 Codex:
 
 ```
-codex plugin marketplace add Processorio/autocontent-method
+codex plugin marketplace add Drtduck/content-factory
 codex plugin add autocontent-copilot@autocontent-marketplace
 ```
 
 Hermes:
 
 ```
-hermes plugins install Processorio/autocontent-method
+hermes plugins install Drtduck/content-factory
 ```
 
 ### Подключение генерации
@@ -90,21 +90,21 @@ Each agent has its own command. You can also just tell your agent: "install the 
 Claude:
 
 ```
-/plugin marketplace add Processorio/autocontent-method
+/plugin marketplace add Drtduck/content-factory
 /plugin install autocontent-copilot@autocontent-marketplace
 ```
 
 Codex:
 
 ```
-codex plugin marketplace add Processorio/autocontent-method
+codex plugin marketplace add Drtduck/content-factory
 codex plugin add autocontent-copilot@autocontent-marketplace
 ```
 
 Hermes:
 
 ```
-hermes plugins install Processorio/autocontent-method
+hermes plugins install Drtduck/content-factory
 ```
 
 ### Connecting generation
