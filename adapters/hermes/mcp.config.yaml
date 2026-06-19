@@ -1,0 +1,8 @@
+# Фрагмент для mcp_servers в config.yaml вашего Hermes.
+# Токен берётся из переменной окружения AUTOCONTENT_MCP_TOKEN, в файл его не вписывайте.
+mcp_servers:
+  autocontent:
+    url: "https://mcp.processorio.ru/mcp"
+    headers:
+      Authorization: "Bearer ${AUTOCONTENT_MCP_TOKEN}"
+    enabled: true

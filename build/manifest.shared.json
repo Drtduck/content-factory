@@ -1,0 +1,9 @@
+{
+  "name": "autocontent-copilot",
+  "version": "1.3.0",
+  "description": "Контент-копилот для лидогенерации: метод + коннектор к серверу генерации",
+  "keywords": ["контент", "лидогенерация", "mcp", "autocontent", "copilot"],
+  "repo": "Processorio/autocontent-method",
+  "mcp_url": "https://mcp.processorio.ru/mcp",
+  "token_env": "AUTOCONTENT_MCP_TOKEN"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "autocontent-copilot",
+  "version": "1.3.0",
+  "description": "Контент-копилот для лидогенерации: метод + коннектор к серверу генерации",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

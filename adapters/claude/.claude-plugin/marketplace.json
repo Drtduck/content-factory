@@ -1,0 +1,11 @@
+{
+  "name": "autocontent-marketplace",
+  "owner": "Processorio",
+  "plugins": [
+    {
+      "name": "autocontent-copilot",
+      "source": "./",
+      "description": "Контент-копилот для лидогенерации: метод + коннектор к серверу генерации"
+    }
+  ]
+}
